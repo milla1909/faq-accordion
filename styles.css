@@ -1,0 +1,198 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background:linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%)
+    );
+    background-repeat:no-repeat;
+    height:100vh;
+    width:100vw;
+    color:hsl(237, 12%, 33%);
+    font-family:'Kumbh Sans', sans-serif;
+}
+p{
+    display:none;
+}
+button{
+    font-size:1rem;
+    font-weight:400;
+    border:none;
+    cursor:pointer;
+    background-color:transparent;
+    color:inherit;
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+    width:100%;
+    font-family:inherit;
+    text-align: left;
+}
+button>svg{
+    height:1vh;
+ }
+button:hover{
+    color:hsl(14, 88%, 65%);
+}
+hr{
+    border:none;
+    border-bottom:1px solid hsla(0, 0%, 0%, 0.12);
+    font-size:inherit;
+    width:100%;
+}
+
+.main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+    height:100vh;
+    position:relative;
+}
+.text-container{
+background-color:white;
+width:90%;
+max-width:26rem;
+height:70vh;
+border-radius:20px;
+overflow:hidden;
+padding:1.5rem;
+padding-top:5rem;
+padding-bottom:min(10%,3rem);
+display:flex;
+flex-direction:column;
+justify-content:space-evenly;
+align-items:start;
+}
+.text{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items:start;
+}
+.desktop-image{
+    display:none;
+}
+.mobile-image{
+    position:absolute;
+    height:10rem;
+    width:auto;
+    top: 15vh;
+    margin-top:-5.7rem;
+    left:50%;
+    margin-left:-6.595rem;
+    z-index:1000;
+   }
+.shadow{
+    position:absolute;
+    width:13.19rem;
+    height:auto;
+    top:15vh;
+    left:50%;
+    margin-left:-6.595rem;
+    z-index:100;
+}
+/* FAQ heading */
+.heading{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    font-size:1.7rem;
+    margin-bottom:20px;
+    margin-top:10px;
+}
+
+@media (min-width:600px){
+    body{
+        background:linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+        background-repeat:no-repeat;
+        overflow:none;
+        font-family:'Kumbh Sans', sans-serif;    }
+    p{
+            display:none;
+            font-size:1.6vh;
+        
+    }
+    
+    button{
+        font-size:2vh;
+        font-weight:400;
+        border:none;
+        cursor:pointer;
+        background-color:transparent;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        width:100%;
+        font-family:'Kumbh Sans', sans-serif; 
+    }
+    button>svg{
+        height:1vh;
+     }
+    button:hover{
+        color:hsl(14, 88%, 65%);
+    }
+    hr{
+        border:none;
+        border-bottom:1px solid hsla(0, 0%, 0%, 0.2);
+        width:100%;
+    }
+    .main{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100vw;
+        height:100vh;
+        position:relative;
+        overflow:none;
+    }
+    .text-container{
+    background-color:white;
+    width:50%;
+    max-width:50%;
+    height:60vh;
+    border-radius:20px;
+    overflow:hidden;
+    padding-left:25vw;
+    padding-bottom:10vh;
+    display:flex;
+    gap:0.1rem;
+    flex-direction:column;
+    
+    }
+    
+    .desktop-image{
+        display:block;
+        position:absolute;
+        height:40vh;
+        bottom:30vh;
+        right:55vw;
+    }
+    .mobile-image{
+      display:none;
+       }
+    .shadow{
+        display:none;
+    }
+    /* FAQ heading */
+    .heading{
+        width:100%;
+        display:flex;
+        justify-content: start;
+        font-size:3vh;
+        margin-bottom:10px;
+        margin-top: -5vh;
+        
+        
+    }
+    .text{
+        height:100%;
+        margin-top: 5vh;
+    }
+    .text>*{
+        margin-bottom:0.5rem;
+    }
+ 
+}
